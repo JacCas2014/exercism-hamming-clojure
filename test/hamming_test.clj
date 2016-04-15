@@ -18,6 +18,6 @@
 (fact "larger-distance"
        (hamming/distance "ACCAGGG" "ACTATGG") => 2)
 
-(future-fact "undefined-when-lengths-are-different"
+(fact "undefined-when-lengths-are-different"
        (hamming/distance "AAAC" "TAGGGGAGGCTAGCGGTAGGAC") => nil
        (hamming/distance "GACTACGGACAGGGTAACATAG" "GACA") => nil)
