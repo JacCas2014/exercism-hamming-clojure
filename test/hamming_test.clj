@@ -9,13 +9,13 @@
 (fact "no-difference-between-identical-strands"
        (hamming/distance "GGACTGA" "GGACTGA") => 0)
 
-(future-fact "complete-distance-in-small-strand"
+(fact "complete-distance-in-small-strand"
       (hamming/distance "ACT" "GGA") => 3)
 
-(future-fact "small-distance-in-middle-somewhere"
+(fact "small-distance-in-middle-somewhere"
       (hamming/distance "GGACG" "GGTCG") => 1)
 
-(future-fact "larger-distance"
+(fact "larger-distance"
        (hamming/distance "ACCAGGG" "ACTATGG") => 2)
 
 (future-fact "undefined-when-lengths-are-different"

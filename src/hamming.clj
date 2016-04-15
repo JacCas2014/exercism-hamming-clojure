@@ -1,4 +1,4 @@
  (ns hamming)
 
- (defn distance [strand strand]
-  0)
+ (defn distance [strand strandToCompareTo]
+  (count (filter false? (map = strand strandToCompareTo))))
