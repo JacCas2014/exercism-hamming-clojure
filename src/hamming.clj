@@ -1,3 +1,4 @@
  (ns hamming)
 
- (defn distance [strand strand] )
+ (defn distance [strand strand]
+  0)

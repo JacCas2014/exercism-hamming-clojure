@@ -3,10 +3,10 @@
             [hamming :refer :all])
   (:use midje.sweet))
 
-(future-fact "no-difference-between-empty-strands"
+(fact "no-difference-between-empty-strands"
         (hamming/distance "" "") => 0)
 
-(future-fact "no-difference-between-identical-strands"
+(fact "no-difference-between-identical-strands"
        (hamming/distance "GGACTGA" "GGACTGA") => 0)
 
 (future-fact "complete-distance-in-small-strand"
